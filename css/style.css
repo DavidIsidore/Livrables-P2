@@ -1,5 +1,8 @@
-
-
+/*********************************/
+/*                               */
+/*         REGLES CSS            */
+/*                               */
+/*********************************/
 
 /*Définition de la police et des marges pour la page*/
 
@@ -12,7 +15,7 @@ body
     box-sizing: content-box;
 }
 
-
+/*_______________________________________________*/
 
 /*PARAMETRES DU HEADER*/
 
@@ -35,6 +38,7 @@ h2
     height: 75px;
 }
 
+/*hauteur des liens de navigation*/
 #nav
 {
     height: 75px;
@@ -55,7 +59,6 @@ centrage des éléments*/
 }
 
 /*Liens du menu non soulignés*/
-
 a
 {
     text-decoration: none;
@@ -72,6 +75,8 @@ header a:hover
 }
 
 /*FIN DES PARAMETRES DU HEADER*/
+
+/*_______________________________________________*/
 
 
 /*PARAMETRES DU BLOC DE RECHERCHE*/
@@ -136,8 +141,9 @@ hauteur du champ*/
     border:  none;
     padding: 1%;
 }
-/*Fin du formulaire de recherche*/
+/*FIN DES PARAMETRES DU FORMULAIRE DE RECHERCHE*/
 
+/*_______________________________________________*/
 
 
 /*BLOC FILTRES*/
@@ -160,6 +166,7 @@ mise en gras de la police*/
     font-weight: 700;
 }
 
+/*espacement du contenu des filtres*/
 #filtres p
 {
     margin-right: 2%;
@@ -184,12 +191,16 @@ définition des marges intérieures*/
     height: 50px;
 }
 
+/*espacement du texte mis en valeur du bloc filtres*/
 .bloc_filtres span
 {
     padding-right: 3%;
     padding-left: 3%;
 }
 
+/*Définition de bloc filtres en tant que flexbox
+orientation en ligne
+définition de la largeur*/
 #bloc_filtres
 {
     display: flex;
@@ -221,6 +232,7 @@ marges intérieures*/
 /*filtre animaux
 longueur du bloc*/
 
+/*hauteur du bloc animaux autorisés*/
 #animaux
 {
     width: 130px;
@@ -236,6 +248,8 @@ figcaption
     font-size: 0.9em;
 }
 /*FIN DU BLOC FILTRES*/
+
+/*_______________________________________________*/
 
 
 /*BLOC D'INFORMATIONS*/
@@ -271,6 +285,9 @@ dimension*/
     color: #0065fc;
 }
 
+/*bloc d'informations complémentaires
+définition en tant que flexbox
+espacement à gauche*/
 #infos
 {
     display: flex;
@@ -278,20 +295,27 @@ dimension*/
 }
 /*FIN DU BLOC D'INFORMATIONS*/
 
+/*_______________________________________________*/
+
 
 /*SECTION HEBERGEMENT - LES PLUS POPULAIRES*/
+
+
+
 /*définition en tant que flexbox
 positionnement relatif des blocs
 */
-
-/*SECTION HEBERGEMENT*/
-
 #hebergement
 {
     display: flex;
     flex-direction: row;
     margin-top: 5%;
 }
+
+/*_______________________________________________*/
+
+
+/*SECTION HEBERGEMENT*/
 
 /*Propriétés du bloc de cartes*/
 #card_hebergement
@@ -306,11 +330,15 @@ positionnement relatif des blocs
     border-radius: 25px;
 }
 
+/*espacement à gauche du sous-titre*/
 #titre_hebergement
 {
     margin-left: 3%;
 }
 
+/*Cartes de la section Hébergements
+définition en tant que flexbox
+mise à al ligne automatique*/
 #cards
 {
     display: flex;
@@ -345,6 +373,7 @@ positionnement relatif des blocs
     max-height: 155px;
 }
 
+/*Réglage de la hauteur des photos*/
 #cards figure
 {
     margin: 0;
@@ -364,6 +393,7 @@ arrondi des bordures*/
     border-radius: 15px 15px 0 0;
 }
 
+/*Coloration en bleu des étoiles de notation*/
 #card_hebergement i
 {
     color: #0065fc;
@@ -389,12 +419,16 @@ arrondi des bordures*/
     margin-bottom: 25px;
 }
 
+/*Désactivation du soulignement du lien au passage de la souris*/
 #afficher a:hover
 {
     text-decoration: none;
 }
 
 /*FIN DE LA SECTION HEBERGEMENT*/
+
+/*_______________________________________________*/
+
 
 /*SECTION LES PLUS POPULAIRES*/
 
@@ -435,11 +469,13 @@ hauteur et largeur des cartes*/
     margin-bottom: 10%;
 }
 
+/*Définition de la marge des textes de chaque carte*/
 .card1 p
 {
     margin-top: 4%;
 }
 
+/*Dimensionnement des photos*/
 .photo_populaires
 {
     width: 40%;
@@ -485,6 +521,11 @@ dimensions de la photo*/
     color: #0065FC;
 }
 
+/*FIN DE LA SECTION LES PLUS POPULAIRES*/
+
+/*_______________________________________________*/
+
+
 /*SECTION ACTIVITES*/
 
 /*section activites
@@ -499,6 +540,7 @@ définition des marges*/
     margin-top: 4%;
 }
 
+/*Espacement à gauche du sous-titre*/
 #activites h3
 {
     margin-left: 2%;
@@ -525,28 +567,34 @@ définition de la largeur des blocs*/
     margin-right: 1%;
 }
 
+/*Dimensionnement des photos du vieux Port et des calanques*/
 #vieux_port img, #calanques img
 {
     height: 437.5px;
     object-fit: cover;
 }
 
+/*Dimensionnement de la carte du fort de Pomègues*/
 #pomegues
 {
     height: 192px;
 }
 
+/*Dimensionnement de la photo du fort de Pomègues*/
 #pomegues img
 {
     height: 129.5px;
     object-fit: cover;
 }
 
+/*Dimensionnement de la carte des îles du Frioul*/
 #frioul
 {
     height: 288px;
     padding-top: 20px;
 }
+
+/*Dimensionnement de la photo des îles du Frioul*/
 
 #frioul img
 {
@@ -581,22 +629,30 @@ définition de l'épaisseur de la police*/
     font-weight: 700;
 }
 
+/*Dimensionnement des cartes de Notre-Dame et Longchamp*/
 #notre-dame, #longchamp
 {
     height: 240px;
 }
 
+/*Dimensionnement des photos de Notre-Dame et Longchamp*/
 #notre-dame img, #longchamp img
 {
     height: 177.5px;
     object-fit: cover;
 }
 
+/*Définition de la marge haute de la carte de Longchamp*/
 #longchamp
 {
     margin-top: 20px;
 }
 
+/*Texte descriptif des activités
+définition en tant que flexbox
+alignement du texte
+dilensionnement vertical
+espacement à gauche*/
 .nom_activite
 {
     display: flex;
@@ -613,7 +669,10 @@ orientation en colonne*/
     flex-direction: column;
 }
 
-/*fin de la section activités*/
+/*FIN DE LA SECTION ACTIVITES*/
+
+/*_______________________________________________*/
+
 
 /*FOOTER*/
 
@@ -630,30 +689,55 @@ footer
     margin-bottom: 50px;
 }
 
+/*Espacement haut des liens*/
 .footer_liens
 {
     padding-top: 20px;
 }
 
 
+/*FIN DU CSS POUR LES ORDINATEURS*/
 
-/*MEDIA QUERIES*/
 
-/*POUR LES TABLETTES*/
+/*_______________________________________________*/
+/*_______________________________________________*/
+
+
+/****************************************/
+/*                                      */
+/*           MEDIA QUERIES              */
+/*                                      */
+/****************************************/
+
+
+/*_______________________________________________*/
+
+
+
+/****************************************/
+/*                                      */
+/*       POUR LES TABLETTES             */
+/*                                      */
+/****************************************/
+
+
+
+
 
 @media screen and (max-width: 992px)
 {
     /*Définition de la police et des marges pour la page*/
 
-body
-{
-    font-family: 'Raleway', sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 8px;
-    box-sizing: content-box;
-}
+    body
+    {
+        font-family: 'Raleway', sans-serif;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 8px;
+        box-sizing: content-box;
+    }
 
+/*_______________________________________________*/
 
 
 /*PARAMETRES DU HEADER*/
@@ -667,8 +751,6 @@ h2
 
 
 /*Définition du bloc logo + liens en tant que flexbox + marges*/
-
-
 #bloc_logo_liens
 {
     display: flex;
@@ -677,6 +759,7 @@ h2
     height: 75px;
 }
 
+/*hauteur des liens de navigation*/
 #nav
 {
     height: 75px;
@@ -687,7 +770,6 @@ h2
 Définition du bloc en tant que flexbox
 espacement des éléments dans la flexbox
 centrage des éléments*/
-
 #liens
 {
     min-width: 30%;
@@ -714,6 +796,8 @@ header a:hover
 }
 
 /*FIN DES PARAMETRES DU HEADER*/
+
+/*_______________________________________________*/
 
 
 /*PARAMETRES DU BLOC DE RECHERCHE*/
@@ -750,7 +834,6 @@ désactivée sur 992px*/
 
 /*Couleur de fond autour de l'icone de localisation
 arrondissement des bordures*/
-
 #bloc_couleur
 {
     padding: 1%;
@@ -770,7 +853,6 @@ arrondissement des bordures*/
 définition de la couleur de fond
 définition de la couleur de police
 hauteur du champ*/
-
 #champ
 {
     font-weight: 700;
@@ -778,8 +860,9 @@ hauteur du champ*/
     border:  none;
     padding: 1%;
 }
-/*Fin du formulaire de recherche*/
+/*FIN DES PARAMETRES DU FORMULAIRE DE RECHERCHE*/
 
+/*_______________________________________________*/
 
 
 /*BLOC FILTRES*/
@@ -789,7 +872,6 @@ centrage des éléments
 dimension de la boîte
 espacement horizontal des éléments
 mise en gras de la police*/
-
 #filtres
 {
     display: flex;
@@ -802,6 +884,7 @@ mise en gras de la police*/
     font-weight: 700;
 }
 
+/*espacement du contenu des filtres*/
 #filtres p
 {
     margin-right: 2%;
@@ -813,7 +896,6 @@ définition en tant que flexbox
 espacement horizontal
 bordure + arrondi boudure
 définition des marges intérieures*/
-
 .filtre
 {
     display: flex;
@@ -825,12 +907,17 @@ définition des marges intérieures*/
     padding-right: 3%;
 }
 
+
+/*espacement du texte mis en valeur du bloc filtres*/
 .bloc_filtres span
 {
     padding-right: 3%;
     padding-left: 3%;
 }
 
+/*Définition de bloc filtres en tant que flexbox
+orientation en ligne
+définition de la largeur*/
 #bloc_filtres
 {
     display: flex;
@@ -848,7 +935,6 @@ définition des marges intérieures*/
 définition de la couleur de fond
 arrondi de la bordure
 marges intérieures*/
-
 .icone
 {
     color: #0065fc;
@@ -861,7 +947,6 @@ marges intérieures*/
 
 /*filtre animaux
 longueur du bloc*/
-
 #animaux
 {
     width: 130px;
@@ -869,7 +954,6 @@ longueur du bloc*/
 
 /*Catégories des filtres
 marges internes*/
-
 figcaption
 {
     padding-left: 1%;
@@ -878,13 +962,14 @@ figcaption
 }
 /*FIN DU BLOC FILTRES*/
 
+/*_______________________________________________*/
+
 
 /*BLOC D'INFORMATIONS*/
 /*définition en tant que flexbox
 centrage vertical des éléments
 dimension
 espacement horizontal*/
-
 #bloc_info
 {
     position: relative;
@@ -900,7 +985,6 @@ centrage horizontal
 définition de la bordure
 arrondi de la bordure
 dimension*/
-
 #info
 {
     display: flex;
@@ -912,6 +996,9 @@ dimension*/
     color: #0065fc;
 }
 
+/*bloc d'informations complémentaires
+définition en tant que flexbox
+espacement à gauche*/
 #infos
 {
     display: flex;
@@ -919,20 +1006,29 @@ dimension*/
 }
 /*FIN DU BLOC D'INFORMATIONS*/
 
+/*_______________________________________________*/
+
 
 /*SECTION HEBERGEMENT - LES PLUS POPULAIRES*/
+
+
+
 /*définition en tant que flexbox
 positionnement relatif des blocs
 */
-
-/*SECTION HEBERGEMENT*/
-
 #hebergement
 {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
     margin-top: 5%;
+
+/*_______________________________________________*/
+
+
+
+/*SECTION HEBERGEMENT*/
+
 }
 
 /*Propriétés du bloc de cartes*/
@@ -949,11 +1045,15 @@ positionnement relatif des blocs
     border-radius: 25px;
 }
 
+/*espacement à gauche du sous-titre*/
 #titre_hebergement
 {
     margin-left: 3%;
 }
 
+/*Cartes de la section Hébergements
+définition en tant que flexbox
+mise à la ligne automatique*/
 #cards
 {
     display: flex;
@@ -988,6 +1088,8 @@ positionnement relatif des blocs
     max-height: 175px;
 }
 
+
+/*Réglage de la hauteur des photos*/
 #cards figure
 {
     margin: 0;
@@ -1005,6 +1107,7 @@ arrondi des bordures*/
     border-radius: 15px 15px 0 0;
 }
 
+/*Coloration en bleu des étoiles de notation*/
 #card_hebergement i
 {
     color: #0065fc;
@@ -1029,12 +1132,16 @@ arrondi des bordures*/
     padding-left: 3%;
 }
 
+/*Désactivation du soulignement du lien au passage de la souris*/
 #afficher a:hover
 {
     text-decoration: none;
 }
 
 /*FIN DE LA SECTION HEBERGEMENT*/
+
+/*_______________________________________________*/
+
 
 /*SECTION LES PLUS POPULAIRES*/
 
@@ -1078,6 +1185,10 @@ hauteur et largeur des cartes*/
     margin-bottom: 2%;
 }
 
+/*Bloc de cartes
+Définition en tant que flexbox
+orientation en colonne
+dimensionnement à 100%*/
 #cards_pop
 {
     display: flex;
@@ -1085,6 +1196,7 @@ hauteur et largeur des cartes*/
     flex-direction: column;
 }
 
+/*Dimensionnement des photos*/
 .photo_populaires
 {
     width: 50%;
@@ -1131,6 +1243,11 @@ dimensions de la photo*/
     color: #0065FC;
 }
 
+/*FIN DE LA SECTION LES PLUS POPULAIRES*/
+
+/*_______________________________________________*/
+
+
 /*SECTION ACTIVITES*/
 
 /*section activites
@@ -1145,6 +1262,7 @@ définition des marges*/
     position: relative;
 }
 
+/*Espacement à gauche du sous-titre*/
 #activites h3
 {
     margin-left: 2%;
@@ -1171,35 +1289,42 @@ définition de la largeur des blocs*/
     margin-right: 1%;
 }
 
+/*Dimensionnement des photos du vieux Port et des calanques*/
 #vieux_port img, #calanques img
 {
     height: 437.5px;
     object-fit: cover;
 }
 
+/*Dimensionnement de la carte du fort de Pomègues*/
 #pomegues
 {
     height: 192px;
 }
 
+/*Dimensionnement de la photo du fort de Pomègues*/
 #pomegues img
 {
     height: 129.5px;
     object-fit: cover;
 }
 
+/*Photos de la section activités
+définition des marges haute et basse*/
 #vieux_port .image, #calanques .image, #pomegues .image, #frioul .image, #notre-dame .image, #longchamp .image
 {
     margin-top: 0;
     margin-bottom: 0;
 }
 
+/*Dimensionnement de la carte des îles du Frioul*/
 #frioul
 {
     height: 288px;
     padding-top: 20px;
 }
 
+/*Dimensionnement de la photo des îles du Frioul*/
 #frioul img
 {
     height: 225.5px;
@@ -1233,22 +1358,30 @@ définition de l'épaisseur de la police*/
     font-weight: 700;
 }
 
+/*Dimensionnement des cartes de Notre-Dame et Longchamp*/
 #notre-dame, #longchamp
 {
     height: 240px;
 }
 
+/*Dimensionnement des photos de Notre-Dame et Longchamp*/
 #notre-dame img, #longchamp img
 {
     height: 177.5px;
     object-fit: cover;
 }
 
+/*Définition de la marge haute de la carte de Longchamp*/
 #longchamp
 {
     margin-top: 20px;
 }
 
+/*Texte descriptif des activités
+définition en tant que flexbox
+alignement du texte
+dilensionnement vertical
+espacement à gauche*/
 .nom_activite
 {
     display: flex;
@@ -1265,7 +1398,10 @@ orientation en colonne*/
     flex-direction: column;
 }
 
-/*fin de la section activités*/
+/*FIN DE LA SECTION ACTIVITES*/
+
+/*_______________________________________________*/
+
 
 /*FOOTER*/
 
@@ -1283,17 +1419,30 @@ footer
     background-color: #f2f2f2;
 }
 
+/*Espacement haut des liens*/
 .footer_liens
 {
     padding-top: 20px;
 }
 }
 
+/*FIN DES REGLES CSS POUR LES TABLETTES*/
 
-/*RESPONSIVE POUR TELEPHONES*/
+
+/*_______________________________________________*/
+/*_______________________________________________*/
+
+
+/******************************************/
+/*                                        */
+/*          POUR TELEPHONES               */
+/*                                        */
+/******************************************/
+
 
 @media screen and (max-width: 768px)
 {
+    /*définition de la largeur de la page*/
     body
     {
         width: 100%;
@@ -1301,12 +1450,23 @@ footer
         margin-right: 0;
     }
 
+    /*PARAMETRES DU HEADER*/
+
+
+    /*Définition du bloc logo + liens en tant que flexbox
+    orientation en colonne*/
     #bloc_logo_liens
     {
         display: flex;
         flex-direction: column;
     }
 
+    /*liens de navigation
+    définition en tant que flexbox
+    espacement horizontal
+    définition de la largeur et de la hauteur
+    définition des marges
+    bordures*/
     #liens
     {
         display: flex;
@@ -1318,17 +1478,26 @@ footer
         border-bottom: 2px solid grey;
     }
 
+    /*liens de navigation
+    définition de la largeur de chaque lien
+    alignement centré*/
     #liens a
     {
         width: 50%;
         text-align: center;
     }
 
+    /*définition de la taille de police des liens*/
     header nav a
     {
-       font-size: 0.8em;
-    }
+     font-size: 0.8em;
+ }
 
+    /*animation au passage de la souris
+    définition de la hauteur de soulignement
+    définition de l'espacement haut
+    soulignement en bleu
+    mise à la couleur bleue de la police*/ 
     header a:hover
     {          
         height: 47px;
@@ -1339,22 +1508,40 @@ footer
         color: #0065fc;
     }
 
+    /*Définition de la hauteur de police de l'en-tête*/
     #en-tete
     {
         font-size: 0.9em;
     }
 
+    /*Sous-titre de l'en-tête
+    définition de l'espacement haut
+    définition de la largeur*/
     #en-tete h2
     {
         padding-top: 80px;
         width: 90%;
     }
 
+    /*Sous-titre et paragraphe de l'en-tête
+    définition de l'espacement gauche*/
     #en-tete h2, #en-tete p
     {
         padding-left: 30px;
     }
 
+/*FIN DES PARAMETRES DU HEADER*/
+
+/*_______________________________________________*/
+
+
+/*PARAMETRES DU BLOC DE RECHERCHE*/
+
+
+    /*Formulaire
+    définition de la largeur
+    définition de l'espacement haut
+    définition de la marge gauche*/
     form
     {
         width: 90%;
@@ -1362,22 +1549,35 @@ footer
         margin-left: 5%;
     }
 
+    /*Champ de recherche du formulaire
+    définition de la largeur*/
     form input
     {
         width: 100%;
     }
 
+    /*Bouton de recherche du formulaire
+    définition de la larguer
+    arrondi des bordures*/
     #recherche_button
     {
         width: 30px;
         border-radius: 30%;
     }
 
+    /*icone du bouton de recherche
+    masquage du texte "Rechercher"*/
     #envoi
     {
         display: none;
     }
 
+    /*icone du bouton de recherche
+    affichage de l'icone de loupe
+    définition en tant que flexbox
+    définition de l'espacement
+    arrondi des bordures
+    couleur de la loupe en blanc*/
     #loupe
     {
         display: flex;
@@ -1389,6 +1589,19 @@ footer
         padding-top: 12%;
     }
 
+    /*FIN DES PARAMETRES DU BLOC DE RECHERCHE
+
+    /*____________________________________________________*/
+
+    /*PARAMETRES DU BLOC FILTRES*/
+
+    /*bloc de filtres
+    définition en tant que flexbox
+    orientation en ligne
+    alignement horizontal
+    positionnement en relatif
+    définition de la marge gauche
+    définition de la largeur*/
     #filtres
     {
         display: flex;
@@ -1399,6 +1612,11 @@ footer
         width: 90%;
     }
 
+    /*filtres
+    définition en tant que flexbox inline
+    orientation en ligne
+    alignement horizontal
+    mise à la ligne automatique*/
     #bloc_filtres
     {
         display: inline-flex;
@@ -1407,6 +1625,10 @@ footer
         flex-wrap: wrap;
     }
 
+    /*filtres
+    définition de la largeur de chaque filtre (sauf animaux)
+    définition de l'espacement droit
+    définition de la marge du bas*/
     .filtre
     {
         min-width: 40%;
@@ -1420,11 +1642,25 @@ footer
         background-color: #0065EF;
     }
 
+    /*Filtre animaux autorisés
+    définition de la largeur*/
     .animaux
     {
         min-width: 60%;
     }
 
+    /*FIN DES PARAMETRES DU BLOC FILTRES*/
+
+    /*_______________________________________________*/
+
+    /*PARAMETRES DU BLOC INFORMATIONS*/
+
+    /*bloc de texte complémentaire
+    définition en tant que flexbox
+    alignement horizontal
+    définition de la largeur
+    définition de la marge gauche
+    alignement vertical*/ 
     #bloc_info
     {
         display: flex;
@@ -1434,6 +1670,11 @@ footer
         align-items: baseline;
     }
 
+    /*icones du bloc d'informations complémentaires
+    coloration en bleu
+    définition de la largeur
+    arrondi des bordures
+    définition de la hauteur*/
     #info
     {
         color: #0065fc;
@@ -1442,6 +1683,10 @@ footer
         height: 18px;
     }
 
+    /*texte du bloc d'informations complémentaires
+    définition en tant que flexbox
+    mise à la ligne automatique
+    définition de l'espacement gauche*/
     #infos
     {
         display: flex;
@@ -1449,6 +1694,17 @@ footer
         padding-left: 4%;
     }
 
+    /*FIN DES PARAMETRES DU BLOC INFORMATIONS*/
+
+    /*__________________________________________________*/
+
+    /*PARAMETRES DU BLOC HEBERGEMENT*/
+
+    /*bloc hébergements - les plus populaires
+    définition en tant que flexbox
+    orientation en colonne inversée
+    définition de la largeur
+    positionnement relatif*/
     #hebergement
     {
         display: flex;
@@ -1457,6 +1713,12 @@ footer
         position: relative;
     }
 
+    /*bloc hébergements 
+    définition en tant que flexbox
+    orientation en colonne
+    définition de la largeur
+    définition de la marge haute
+    définition de la couleur de fond en transparent*/
     #card_hebergement
     {
         display: flex;
@@ -1468,22 +1730,43 @@ footer
         background-color: transparent;
     }
 
+    /*cartes hébergement
+    définition de la largeur de chaque carte
+    centrage vertical*/
     .card
     {
         width: 90%;
         margin: auto;
     }
 
+    
+    /*cartes hébergement
+    définition de la lerguer de chaque photo*/
     .photo
     {
         width: 90%;
     }
 
+    /*informations sur l'hébergement
+    définition de l'espacement haut*/
     #card_body
     {
         padding-top: 0%;
     }
 
+    /*FIN DES PARAMETRES DU BLOC HEBERGEMENTS*/
+
+    /*_________________________________________________*/
+
+    
+    /*PARAMETRES DU BLOC LES PLUS POPULAIRES*/
+
+    /*bloc les plus populaires
+    définition en tant que flexbox
+    orientation en colonne
+    définition de la lardeur
+    annulation de l'arrondi des bordures
+    définition des marges*/
     #card_populaires
     {
         display: flex;
@@ -1496,6 +1779,11 @@ footer
         margin-top: 50px;
     }
 
+    /*bloc photo - informations
+    définition en tant que flexbox
+    arientaion du bloc en ligne
+    centrage vertical
+    définition de la largeur*/
     .card1
     {
         display: flex;
@@ -1504,12 +1792,20 @@ footer
         width: 90%;
     }
 
+    /*photos du bloc les plus populaires
+    définition de la hauteur
+    définition de la largeur*/
     .photo_populaires
     {
         height: 160px;
         width: 160px;
     }
 
+    /*photos du bloc les plus populaires
+    positionnement relatif
+    dimensionnement des photos avec mise à l'échelle
+    définition de l'arrondi des bordures
+    définition de la marge gauche*/
     .photo_pop
     {
         position: relative;
@@ -1521,6 +1817,14 @@ footer
         margin-left: -3%;
     }
 
+    /*bloc d'informations
+    définition en tant que flexbox
+    mise à la ligne automatique
+    orientation en colonne
+    alignement horizontal
+    définition de l'espacement gauche
+    positionnement relatif
+    définition de la largeur*/
     .nom_prix
     {
         display: flex;
@@ -1532,29 +1836,51 @@ footer
         width: 60%;
     }
 
+    /*FIN DES PARAMETRES DU BLOC LES PLUS POPULAIRES*/
+
+    /*________________________________________________________*/
+
+
+    /*PARAMETRES DU BLOC ACTIVITES/*
+
+    /*bloc activités
+    définition de la largeur
+    positionnement relatif*/
     #activites
     {
         width: 100%;
         position: relative;
     }
 
+    /*bloc activités
+    définition en tant que flexbox de chaque élément
+    orientation en colonne*/
     #bloc_activites
     {
         display: flex;
         flex-direction: column;
     }
 
+    /*sous-titre du bloc activités
+    définition de l'espacement gauche*/
     #activites h2
     {
         padding-left: 3%;
     }
 
+    /*bloc activités - éléments
+    définition de la largeur de chaque élément
+    définition de la marge gauche*/
     #vieux_port, #pomegues-frioul, #calanques, #nd-longchamp
     {
         width: 90%;
         margin-left: 5%;
     }
 
+    /*bloc activités - sous-éléments
+    définition de la hauteur
+    définition de la marge haute
+    ombrage de la bordure*/
     #vieux_port, #pomegues, #frioul, #calanques, #notre-dame, #longchamp
     {
         height: 200px;
@@ -1562,6 +1888,8 @@ footer
         box-shadow: 0 5px 5px #f2f2f2;
     }
 
+    /*éléments du bloc activités
+    rognage des photos*/
     #vieux_port p, #pomegues p, #frioul p, #calanques p, #notre-dame p, #longchamp p
     {
         margin-top: 0;
@@ -1569,38 +1897,48 @@ footer
         overflow: hidden;
     }
 
+    /*photo des îles du Frioul
+    cadrage de la photo*/
     #frioul
     {
         margin-top: 30px;
     }
 
+    /*photos du bloc activités
+    dimensionnement du cadre des photos*/
     .image
     {
         height: 150px;
     }
 
+    /*photos du bloc activités
+    définition de la hauteur des photos et mise à l'échelle*/
     #vieux_port img, #pomegues img, #frioul img, /*calanques img,*/ #notre-dame img, #longchamp img
     {
         height: 225px;
         object-fit: cover;
     }
 
-    #calanques
+    /*photos des calanques et du bloc notre-dame+longchamp
+    positionnement relatif*/
+    #calanques, #nd-longchamp
     {
         position: relative;
     }
 
+    /*photos des calanques
+    définition de la hauteur de la photo*/
     #calanques img
     {
         height: 250px;
     }
 
-    #nd-longchamp
-    {
-        position: relative;
-    }
-
     
+    /*texte complémentaire de l'activité
+    définition de la hauteur
+    définition des marges haute et basse
+    dafinition en tant que flexbox
+    alignement vertical*/
     .nom_activite
     {
         height: 50px;
@@ -1610,6 +1948,20 @@ footer
         align-items: center;
     }
 
+    /*FIN DES PARAMETRES DU BLOC ACTIVITES*/
+
+    /*________________________________________________*/
+
+
+    /*PARAMETRES DU FOOTER*/
+
+    /*pied de page
+    définition en tant que flexbox
+    orientation en colonne
+    positionnement relatif
+    définition de la marge gauche
+    définition de la largeur
+    définition de la marge basse*/
     footer
     {
         display: flex;
@@ -1620,6 +1972,8 @@ footer
         margin-bottom: 50px;
     }
 }
+
+/*FIN DES REGLES CSS POUR LES TELEPHONES*/
 
 
 
