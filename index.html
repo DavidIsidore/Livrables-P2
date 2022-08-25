@@ -2,7 +2,7 @@
 <html lang="fr-FR">
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="device-width, initial-scale=1.0, user-scalable=yes">
 	<title>Booki</title> <!--Titre de la page-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +50,7 @@
 
 		<div id="filtres">
 			<p>Filtres</p> <!--texte-->
-			<div id="filters">
+			<div id="bloc_filtres">
 				<div class="filtre"><i class="fa-solid fa-money-bill-wave icone"></i><span>Economique</span></div> <!--icone + filtre économique-->
 				<div class="filtre"><i class="fa-solid fa-child-reaching icone"></i><span>Familial</span></div> <!-- icone + filtre famille--> 
 				<div class="filtre"><i class="fa-solid fa-heart icone"></i><span>Romantique</span></div> <!--icone + filtre roma,tique-->
@@ -159,6 +159,7 @@
 					<h2>Les plus populaires</h2><!--sous-titre les plus populaires-->
 					<p><i class="fa-solid fa-star"></i></p><!--icone étoile-->
 				</div>
+				<div id="cards_pop">
 				<figure class="card1"><!--bloc d'images non cliquables en colonne-->
 					<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de l'hotel le soleil du matin "></div><!--photo de la chambre-->
 					<div class="nom_prix"><!--bloc nom + prix-->
@@ -187,6 +188,7 @@
 					</div>
 				</figure>
 			</div>
+			</div>
 		</section>
 
 		<!--Section Activités-->
@@ -194,30 +196,30 @@
 			<h2>Activités à Marseille</h2>
 			<div id="bloc_activites">
 				<div id="vieux_port">
-					<p><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du vieux port"></p>
+					<p class="image"><img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo du vieux port"></p>
 					<p class="nom_activite">Vieux Port</p>
 				</div>
 				<div id="pomegues-frioul">
 					<div id="pomegues">
-						<p><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort de Pomègues"></p>
+						<p class="image"><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo du fort de Pomègues"></p>
 						<p class="nom_activite">Fort de Pomègues</p>
 					</div>
 					<div id="frioul">
-						<p><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo des îles du Frioul"></p>
+						<p class="image"><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo des îles du Frioul"></p>
 						<p class="nom_activite">Iles du Frioul</p>
 					</div>
 				</div>
 				<div id="calanques">
-					<p><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo du parc national des calanques"></p>
+					<p class="image"><img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo du parc national des calanques"></p>
 					<p class="nom_activite">Parc National des Calanques</p>
 				</div>
 				<div id="nd-longchamp">
 					<div id="notre-dame">
-						<p><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de notre dame de la garde"></p>
+						<p class="image"><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo de notre dame de la garde"></p>
 						<p class="nom_activite">Notre-Dame-de-la-Garde</p>
 					</div>
 					<div id="longchamp">
-						<p><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du parc longchamp"></p>
+						<p class="image"><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo du parc longchamp"></p>
 						<p class="nom_activite">Parc Longchamp</p>
 					</div>
 				</div>
