@@ -250,7 +250,6 @@ espacement horizontal*/
     top: 50px;
     display: flex;
     align-items: center;
-    /*width: 35%;*/
     justify-content: flex-start;
 }
 
@@ -292,7 +291,6 @@ positionnement relatif des blocs
     display: flex;
     flex-direction: row;
     margin-top: 5%;
-    /*height: 700px;*/
 }
 
 /*Propriétés du bloc de cartes*/
@@ -302,7 +300,6 @@ positionnement relatif des blocs
     flex-direction: column;
     flex-wrap: wrap;
     width: 64%;
-    /*height: 650px;*/
     background-color: #f2f2f2;
     margin-left: 1%;
     margin-right: 1%;
@@ -376,7 +373,6 @@ arrondi des bordures*/
 .card_body
 {
     text-align: left;
-    /*padding: 0px 20px;*/
     padding-left: 3%;
     box-sizing: border-box;
 }
@@ -406,7 +402,6 @@ arrondi des bordures*/
 #card_populaires
 {
     width: 32%;
-    /*height: 650px;*/
     margin-left: 1%;
     background-color: #f2f2f2;
     border-radius: 25px;
@@ -605,7 +600,6 @@ définition de l'épaisseur de la police*/
     align-items: flex-start;
     height: 62.5px;
     padding-left: 5%;
-    /*padding-top: -50px;*/
 }
 
 /*blocs de photos doubles
@@ -712,7 +706,6 @@ header a:hover
 {
     height: 55px;
     color: #0065FC;
-    /*text-decoration: overline;*/
     border-top: 2px solid #0065fc;
     padding-top: 35px;
 }
@@ -895,7 +888,6 @@ espacement horizontal*/
     top: 50px;
     display: flex;
     align-items: center;
-    /*width: 35%;*/
     justify-content: flex-start;
 }
 
@@ -938,7 +930,6 @@ positionnement relatif des blocs
     flex-direction: column-reverse;
     position: relative;
     margin-top: 5%;
-    /*height: 800px;*/
 }
 
 /*Propriétés du bloc de cartes*/
@@ -949,7 +940,6 @@ positionnement relatif des blocs
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    /*top: 800px;*/
     background-color: #f2f2f2;
     margin-left: 1%;
     margin-right: 1%;
@@ -1021,7 +1011,6 @@ arrondi des bordures*/
 .card_body
 {
     text-align: left;
-    /*padding: 0px 20px;*/
     padding-left: 3%;
     box-sizing: border-box;
 }
@@ -1054,7 +1043,6 @@ arrondi des bordures*/
     width: 100%;
     position: relative;
     margin-left: 1%;
-    /*top: 700px;*/
     background-color: #f2f2f2;
     border-radius: 25px;
 }
@@ -1092,13 +1080,6 @@ hauteur et largeur des cartes*/
     display: flex;
     width: 100%;
     flex-direction: column;
-}
-
-#card_populaires
-{
-    /*display: flex;
-    flex-direction: column;
-    width: 100%;*/
 }
 
 .photo_populaires
@@ -1158,7 +1139,6 @@ définition des marges*/
     flex-direction: column;
     margin-top: 3%;
     position: relative;
-    /*top: 800px;*/
 }
 
 #activites h3
@@ -1271,7 +1251,6 @@ définition de l'épaisseur de la police*/
     align-items: flex-start;
     height: 62.5px;
     padding-left: 5%;
-    /*padding-top: -50px;*/
 }
 
 /*blocs de photos doubles
@@ -1293,7 +1272,6 @@ footer
     display: flex;
     flex-direction: row;
     position: relative;
-    /*top: 800px;*/
     width: 100%;
     justify-content: space-around;
     margin-top: 50px;
@@ -1423,13 +1401,11 @@ footer
         flex-direction: row;
         align-items: flex-start;
         flex-wrap: wrap;
-        /*margin-left: -15%;*/
     }
 
     .filtre
     {
         min-width: 40%;
-        /*margin-left: 10%;*/
         padding-right: 4%;
         margin-bottom: 5%;
     }
@@ -1465,7 +1441,6 @@ footer
     #infos
     {
         display: flex;
-        /*overflow-wrap: word-break ;*/
         flex-wrap: wrap;
         padding-left: 4%;
     }
@@ -1476,8 +1451,6 @@ footer
         flex-direction: column-reverse;
         width: 100%;
         position: relative;
-        /*top: 800px;*/
-        /*top: 400px;*/
     }
 
     #card_hebergement
@@ -1486,12 +1459,8 @@ footer
         flex-direction: column;
         flex-wrap: nowrap;
         width: 100%;
-        /*height: 1800px;*/ /*à a=enlever*/
         position: relative;
-        /*top: 2000px*/; /*à enlever*/
-        /*top: 1800px;*/
         margin-top: 5%;
-        /*margin-left: -1%;*/
         background-color: transparent;
     }
 
@@ -1516,11 +1485,7 @@ footer
         display: flex;
         flex-direction: column;
         width: 100%;
-        /*height: 600px;*/ /*a enlever*/
         position: relative;
-        /*top: 1800px;*/ /*a enlever*/
-        /*top: -50px;*/
-        /*margin-top: 15%;*/
         border-radius: 0;
         margin-left: 0;
         margin-right: 0;
@@ -1531,7 +1496,6 @@ footer
     {
         display: flex;
         flex-direction: row;
-        /*height: 200px;*/
         margin: auto;
         width: 90%;
     }
@@ -1545,14 +1509,12 @@ footer
     .photo_pop
     {
         position: relative;
-        /*top: 15%;*/
         left: 10%;
         width: 160px;
         height: 160px;
         object-fit: cover;
         border-radius: 25px 0px 0 25px;
         margin-left: -3%;
-        /*margin-top: 10%;*/
     }
 
     .nom_prix
@@ -1561,23 +1523,19 @@ footer
         flex-wrap: wrap;
         padding-left: 40px;
         position: relative;
-        /*margin-top: -1%;*/
         width: 60%;
-        /*margin-left: -8%;*/
     }
 
     #activites
     {
         width: 100%;
         position: relative;
-        /*top: 2750px; a enlever*/
     }
 
     #bloc_activites
     {
         display: flex;
         flex-direction: column;
-        /*height: 2000px;*/ /*a enlever*/
     }
 
     #activites h2
@@ -1602,7 +1560,6 @@ footer
     {
         margin-top: 0;
         margin-bottom: 0;
-        /*height: 150px;*/
         overflow: hidden;
     }
 
@@ -1625,7 +1582,6 @@ footer
     #calanques
     {
         position: relative;
-        /*top: 80px;*/
     }
 
     #calanques img
@@ -1636,15 +1592,9 @@ footer
     #nd-longchamp
     {
         position: relative;
-        /*top: 30px;*/
     }
 
-    /*#activites img
-    {
-        width: 100%;
-        height: 175px;
-        object-fit: cover;
-    }*/
+    
     .nom_activite
     {
         height: 50px;
@@ -1659,7 +1609,6 @@ footer
         display: flex;
         flex-direction: column;
         position: relative;
-        /*top: 2800px; a enlever*/
         margin-left: 5%;
         width: 95%;
         margin-bottom: 50px;
