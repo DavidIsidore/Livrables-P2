@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -31,10 +32,10 @@
 				<nav id="liens"> 
 
 					<!--lien vers la partie Hébergements-->
-					<a href="#hebergement" title="Hébergements">Hébergements</a>
+					<a class="lien" href="#hebergement" title="Hébergements">Hébergements</a>
 
 					<!--lien vers la partie Activités-->
-					<a href="#activites" title="Activités">Activités</a>
+					<a class="lien" href="#activites" title="Activités">Activités</a>
 				</nav>
 			</div>
 
@@ -55,7 +56,7 @@
 			<div id="bloc_couleur"><i id="ico" class="fa-solid fa-location-dot fa-lg"></i></div>
 
 			<!--champ de recherche pré-rempli-->
-			<input id="champ" type="text" name="recherche" value="Marseille, France"> 
+			<input id="champ" type="text" name="recherche" placeholder="Marseille, France"> 
 
 			<!--bouton de recherche-->
 			<div  id="recherche_button"><a id="envoi" href="">Rechercher</a><a id="loupe" href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
@@ -75,7 +76,7 @@
 				<!--icone + filtre économique-->
 				<div class="filtre"><i class="fa-solid fa-money-bill-wave icone"></i><span>Economique</span></div>
 
-				 <!-- icone + filtre famille--> 
+				<!-- icone + filtre famille--> 
 				<div class="filtre"><i class="fa-solid fa-child-reaching icone"></i><span>Familial</span></div>
 
 				<!--icone + filtre romantique--> 
@@ -118,7 +119,7 @@
 						<!--carte rendue cliquable-->
 						<a class="img_clic" href="#">
 
-						 	<!--bloc photo-->
+							<!--bloc photo-->
 							<figure>
 
 								<!--photo de l'hotel la Cannebière-->
@@ -135,7 +136,7 @@
 								<p class="prix_nuit">Nuit à partir de <strong>25 €</strong></p>
 
 								<!--icones notation de l'hotel-->
-								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star fa-grey"></i></p>
 							</div>
 						</a>
 					</div>
@@ -174,7 +175,7 @@
 						<!--carte rendue cliquable-->
 						<a class="img_clic" href="#">
 
-						 	<!--bloc photo-->
+							<!--bloc photo-->
 							<figure>
 
 								<!--photo de l'hôtel les mouettes-->
@@ -191,7 +192,7 @@
 								<p class="prix_nuit">Nuit à partir de 76 <strong>€</strong></p>
 
 								<!--icones notation de l'hotel-->
-								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star fa-grey"></i></p>
 							</div>
 						</a>
 					</div>
@@ -219,7 +220,7 @@
 								<p class="prix_nuit">Nuit à partir de 46 <strong>€</strong></p>
 
 								<!--icones notation de l'hotel-->
-								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></p>
+								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star fa-grey"></i><i class="fa-solid fa-star fa-grey"></i></p>
 							</div>
 						</a>
 					</div>
@@ -245,7 +246,7 @@
 								<p class="prix_nuit">Nuit à partir de 23 <strong>€</strong></p>
 
 								<!--icones notation de l'hotel-->
-								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
+								<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star fa-grey"></i></p>
 							</div>
 						</a>
 					</div>
@@ -297,69 +298,69 @@
 				<!--bloc des cartes-->
 				<div id="cards_pop">
 
-				<!--bloc hôtel le soleil du matin-->	
-				<figure class="card1">
+					<!--bloc hôtel le soleil du matin-->	
+					<figure class="card1">
 
-					<!--photo de la chambre-->
-					<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de l'hotel le soleil du matin "></div>
+						<!--photo de la chambre-->
+						<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo de l'hotel le soleil du matin "></div>
 
-					<!--bloc nom + prix-->
-					<div class="nom_prix">
+						<!--bloc nom + prix-->
+						<div class="nom_prix">
 
-						<!--nom de l'hotel-->
-						<h3>Hôtel Le soleil du matin</h3>
+							<!--nom de l'hotel-->
+							<h3>Hôtel Le soleil du matin</h3>
 
-						<!--prix de l'hotel-->
-						<p>Nuit à partir de 128 <strong>€</strong></p>
+							<!--prix de l'hotel-->
+							<p>Nuit à partir de 128 <strong>€</strong></p>
 
-						<!--icones notation de l'hotel-->
-						<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
-					</div>
-				</figure>
+							<!--icones notation de l'hotel-->
+							<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+						</div>
+					</figure>
 
-				<!--bloc chambres d'hôtes au coeur de l'eau-->
-				<figure class="card1">
+					<!--bloc chambres d'hôtes au coeur de l'eau-->
+					<figure class="card1">
 
-					<!--photo de la chambre-->
-					<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de l'hotel au coeur de l'eau"></div>
+						<!--photo de la chambre-->
+						<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de l'hotel au coeur de l'eau"></div>
 
-					<!--bloc nom + prix-->
-					<div class="nom_prix">
+						<!--bloc nom + prix-->
+						<div class="nom_prix">
 
-						<!--nom de l'hotel-->
-						<h3>Au coeur de l'eau</h3>
+							<!--nom de l'hotel-->
+							<h3>Au coeur de l'eau</h3>
 
-						<!--nom de l'hotel-->
-						<h3>Chambres d'hôtes</h3>
+							<!--nom de l'hotel-->
+							<h3>Chambres d'hôtes</h3>
 
-						<!--prix de l'hotel-->
-						<p>Nuit à partir de 71 <strong>€</strong></p>
+							<!--prix de l'hotel-->
+							<p>Nuit à partir de 71 <strong>€</strong></p>
 
-						<!--icones notation de l'hotel-->
-						<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-					</div>
-				</figure>
+							<!--icones notation de l'hotel-->
+							<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star fa-grey"></i></p>
+						</div>
+					</figure>
 
-				<!--bloc hôtel tout bleu et blanc-->
-				<figure class="card1">
+					<!--bloc hôtel tout bleu et blanc-->
+					<figure class="card1">
 
-					<!--photo de la chambre-->
-					<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de lhotel tout bleu et tout blanc"></div>
+						<!--photo de la chambre-->
+						<div class="photo_populaires"><img class="photo_pop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo de lhotel tout bleu et tout blanc"></div>
 
-					<!--bloc nom + prix-->
-					<div class="nom_prix">
+						<!--bloc nom + prix-->
+						<div class="nom_prix">
 
-						<!--nom de l'hotel-->
-						<h3>Hôtel Tout bleu et blanc</h3>
+							<!--nom de l'hotel-->
+							<h3>Hôtel Tout bleu et blanc</h3>
 
-						<!--prix de l'hotel-->
-						<p>Nuit à partir de 68 <strong>€</strong></p>
+							<!--prix de l'hotel-->
+							<p>Nuit à partir de 68 <strong>€</strong></p>
 
-						<!--icones notation de l'hotel-->
-						<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></p>
-					</div>
-				</figure>
-			</div>
+							<!--icones notation de l'hotel-->
+							<p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star fa-grey"></i></p>
+						</div>
+					</figure>
+				</div>
 			</div>
 		</section>
 
@@ -445,46 +446,51 @@
 		<!--pied de page-->
 		<footer>
 
-			<!--bloc à propos-->
-			<div>
+			<!--bloc englobant les 3 blocs de liens-->
+			<div class="footer">
 
-				<!--Sous-titre à propos-->
-				<h3>A propos</h3>
+				<!--bloc à propos-->
+				<div>
 
-				<!--lien fonctionnement du site (inactif)-->
-				<p class="footer_liens"><a href="#">Fonctionnement du site</a></p>
+					<!--Sous-titre à propos-->
+					<h3>A propos</h3>
 
-				<!--lien CGV (inactif)-->
-				<p><a href="#">Conditions générales de vente</a></p>
+					<!--lien fonctionnement du site (inactif)-->
+					<p class="footer_liens"><a href="#">Fonctionnement du site</a></p>
 
-				<!--lien confidentialité (inactif)-->
-				<p><a href="#">Données et confidentialité</a></p>
-			</div>
+					<!--lien CGV (inactif)-->
+					<p><a href="#">Conditions générales de vente</a></p>
 
-			<!--bloc nos hébergements-->
-			<div>
+					<!--lien confidentialité (inactif)-->
+					<p><a href="#">Données et confidentialité</a></p>
+				</div>
 
-				<!--sous-titre nos hébergements-->
-				<h3>Nos hébergements</h3>
+				<!--bloc nos hébergements-->
+				<div>
 
-				<!--lien charte qualité (inactif)-->
-				<p class="footer_liens"><a href="#">Charte qualité</a></p>
+					<!--sous-titre nos hébergements-->
+					<h3>Nos hébergements</h3>
 
-				<!--lien soumettre votre hôtel (inactif)-->
-				<p><a href="#">Soumettre votre hôtel</a></p>
-			</div>
+					<!--lien charte qualité (inactif)-->
+					<p class="footer_liens"><a href="#">Charte qualité</a></p>
 
-			<!--bloc assistance-->
-			<div>
-				
-				<!--Sous-titre assistance-->
-				<h3>Assistance</h3>
+					<!--lien soumettre votre hôtel (inactif)-->
+					<p><a href="#">Soumettre votre hôtel</a></p>
+				</div>
 
-				<!--lien centre d'aide (inactif)-->
-				<p class="footer_liens"><a href="#">Centre d'aide</a></p>
+				<!--bloc assistance-->
+				<div>
 
-				<!--lien nous contacter (inactif)-->
-				<p><a href="#">Nous contacter</a></p>
+					<!--Sous-titre assistance-->
+					<h3>Assistance</h3>
+
+					<!--lien centre d'aide (inactif)-->
+					<p class="footer_liens"><a href="#">Centre d'aide</a></p>
+
+					<!--lien nous contacter (inactif)-->
+					<p><a href="#">Nous contacter</a></p>
+				</div>
+
 			</div>
 
 		</footer>

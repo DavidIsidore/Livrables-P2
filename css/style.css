@@ -52,10 +52,13 @@ centrage des éléments*/
 
 #liens
 {
-    min-width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.lien{
+    padding-left: 30px;
 }
 
 /*Liens du menu non soulignés*/
@@ -176,7 +179,7 @@ mise en gras de la police*/
 /*Classes de filtres
 définition en tant que flexbox
 espacement horizontal
-bordure + arrondi boudure
+bordure + arrondi bordure
 définition des marges intérieures*/
 
 .filtre
@@ -192,10 +195,10 @@ définition des marges intérieures*/
 }
 
 /*espacement du texte mis en valeur du bloc filtres*/
-.bloc_filtres span
+.filtre span
 {
     padding-right: 3%;
-    padding-left: 3%;
+    padding-left: 4%;
 }
 
 /*Définition de bloc filtres en tant que flexbox
@@ -233,9 +236,9 @@ marges intérieures*/
 longueur du bloc*/
 
 /*hauteur du bloc animaux autorisés*/
-#animaux
+.animaux
 {
-    width: 130px;
+    min-width: 250px;
 }
 
 /*Catégories des filtres
@@ -281,7 +284,7 @@ dimension*/
     border: 1px solid grey;
     width: 1.7%;
     height: 20px;
-    border-radius: 45%;
+    border-radius: 50%;
     color: #0065fc;
 }
 
@@ -365,13 +368,9 @@ mise à al ligne automatique*/
     margin-top: 2%;
     background-color: white;
     border-radius: 25px;
+    box-shadow: 3px 3px #f2f2f2;
 }
 
-/*Dimensionnement des photos*/
-.photo
-{
-    max-height: 155px;
-}
 
 /*Réglage de la hauteur des photos*/
 #cards figure
@@ -380,6 +379,8 @@ mise à al ligne automatique*/
     height: 40%;
 }
 
+
+
 /*Positionnement de l'image de chaque carte
 centrage de la photo dans le cadre
 arrondi des bordures*/
@@ -387,6 +388,7 @@ arrondi des bordures*/
 {
     width: 94%;
     height: 95%;
+    max-height: 155px;
     object-fit: cover;
     margin-left: 3%;
     margin-top: 3%;
@@ -399,12 +401,19 @@ arrondi des bordures*/
     color: #0065fc;
 }
 
+
+
+#card_hebergement .fa-grey{
+    color: gray;
+}
+
 /*Alignement du texte sous les photos*/
 .card_body
 {
     text-align: left;
     padding-left: 3%;
     box-sizing: border-box;
+    padding-top: 3%;
 }
 
 /*Bouton afficher plus*/
@@ -519,6 +528,10 @@ dimensions de la photo*/
 .nom_prix i
 {
     color: #0065FC;
+}
+
+.nom_prix .fa-grey{
+    color: gray;
 }
 
 /*FIN DE LA SECTION LES PLUS POPULAIRES*/
@@ -682,11 +695,24 @@ footer
 {
     display: flex;
     flex-direction: row;
-    width: 75%;
-    justify-content: space-between;
+    width: 100%;
     margin-top: 50px;
     background-color: #f2f2f2;
     margin-bottom: 50px;
+}
+
+
+/*bloc englobant les 3 blocs de liens
+définition en tant que flexbox
+alignement horizontal
+définition de la largeur
+espacement*/
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
 }
 
 /*Espacement haut des liens*/
@@ -857,7 +883,8 @@ hauteur du champ*/
 {
     font-weight: 700;
     font-size: 1.2em;
-    border:  none;
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
     padding: 1%;
 }
 /*FIN DES PARAMETRES DU FORMULAIRE DE RECHERCHE*/
@@ -1082,12 +1109,6 @@ mise à la ligne automatique*/
     border-radius: 25px;
 }
 
-/*Dimensionnement des photos*/
-.photo
-{
-    max-height: 175px;
-}
-
 
 /*Réglage de la hauteur des photos*/
 #cards figure
@@ -1102,6 +1123,7 @@ arrondi des bordures*/
 .photo
 {
     width: 94%;
+    max-height: 175px;
     margin-left: 3%;
     margin-top: 3%;
     border-radius: 15px 15px 0 0;
@@ -1407,7 +1429,7 @@ orientation en colonne*/
 
 /*footer
 définition en tant que flexbox*/
-footer
+.footer
 {
     display: flex;
     flex-direction: row;
@@ -1472,7 +1494,7 @@ footer
         display: flex;
         justify-content: space-around;
         width: 100%;
-        height: 30px;
+        height: 20px;
         padding-top: 10%;
         padding-bottom: 5%;
         border-bottom: 2px solid grey;
@@ -1490,8 +1512,8 @@ footer
     /*définition de la taille de police des liens*/
     header nav a
     {
-     font-size: 0.8em;
- }
+       font-size: 0.9em;
+   }
 
     /*animation au passage de la souris
     définition de la hauteur de soulignement
@@ -1500,12 +1522,21 @@ footer
     mise à la couleur bleue de la police*/ 
     header a:hover
     {          
-        height: 47px;
+        /*height: 43px;
         padding-top: 25px;
         border-top: none;
         text-decoration: none;
         border-bottom: 2px solid #0065fc;
-        color: #0065fc;
+        color: #0065fc;*/
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 20px;
+        border-top: none;
+        /*padding-top: 10%;*/
+        padding-bottom: 2%;
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
     }
 
     /*Définition de la hauteur de police de l'en-tête*/
@@ -1563,6 +1594,28 @@ footer
     {
         width: 30px;
         border-radius: 30%;
+    }
+
+    /*Couleur de fond autour de l'icone de localisation
+    arrondissement des bordures*/
+    #bloc_couleur
+    {
+       padding: 2%;
+        border-radius: 9px 0 0 9px;
+        background-color: #f2f2f2;
+    }
+
+    /*arrondissement de la bordure du côté droit
+    définition de la couleur de fond
+    définition de la couleur de police
+    hauteur du champ*/
+    #champ
+    {
+        font-weight: 700;
+        font-size: 1.2em;
+        border-top: solid 1px #f2f2f2;
+        border-bottom: solid 1px #f2f2f2;
+        padding: 1%;
     }
 
     /*icone du bouton de recherche
@@ -1737,6 +1790,7 @@ footer
     {
         width: 90%;
         margin: auto;
+        height: 325px;
     }
 
     
@@ -1958,15 +2012,13 @@ footer
     /*pied de page
     définition en tant que flexbox
     orientation en colonne
-    positionnement relatif
     définition de la marge gauche
     définition de la largeur
     définition de la marge basse*/
-    footer
+    .footer
     {
         display: flex;
         flex-direction: column;
-        position: relative;
         margin-left: 5%;
         width: 95%;
         margin-bottom: 50px;
