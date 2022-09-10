@@ -9,3 +9,4 @@ rajout des ombres portées de la partie 'Hébergements sur tablette et mobile
 modification du surlignement des liens du header
 modification du padding-left du footer
 modification de la hauteur des cartes hébergement pour la version tablette
+modification de la partie filtres et de la hauteur du champ de recherche
