@@ -53,12 +53,17 @@ centrage des éléments*/
 #liens
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    min-width: 250px;
 }
 
+/*largeur de chaque lien
+centrage du texte*/
 .lien{
-    padding-left: 30px;
+    width: 150px;
+    text-align: center;
+    font-size: 0.9em;
 }
 
 /*Liens du menu non soulignés*/
@@ -68,7 +73,9 @@ a
     color: black;
 }
 
-/*Surlignement des liens au survol*/
+/*Surlignement des liens au survol
+Définition de la hauteur de surlignement
+Définition de la couleur de la bordure*/
 header a:hover
 {
     height: 55px;
@@ -277,15 +284,30 @@ définition de la bordure
 arrondi de la bordure
 dimension*/
 
-#info
+.icon-stack{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    vertical-align: middle;
+}
+
+.fa-info
 {
-    display: flex;
-    justify-content: center;
-    border: 1px solid grey;
+    position: absolute;
+    text-align: center;
     width: 1.7%;
     height: 20px;
-    border-radius: 50%;
     color: #0065fc;
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.fa-circle {
+    position: absolute;
+    text-align: center;
+    color: #f2f2f2;
 }
 
 /*bloc d'informations complémentaires
@@ -713,6 +735,7 @@ espacement*/
     flex-direction: row;
     width: 75%;
     justify-content: space-between;
+    padding-left: 30px;
 }
 
 /*Espacement haut des liens*/
@@ -1006,22 +1029,7 @@ espacement horizontal*/
     justify-content: flex-start;
 }
 
-/*icone informations
-définition en tant que flexbox
-centrage horizontal
-définition de la bordure
-arrondi de la bordure
-dimension*/
-#info
-{
-    display: flex;
-    justify-content: center;
-    border: 1px solid grey;
-    width: 4%;
-    height: 24px;
-    border-radius: 45%;
-    color: #0065fc;
-}
+
 
 /*bloc d'informations complémentaires
 définition en tant que flexbox
@@ -1107,6 +1115,8 @@ mise à la ligne automatique*/
     margin-top: 2%;
     background-color: white;
     border-radius: 25px;
+    box-shadow: 3px 3px #f2f2f2;
+
 }
 
 
@@ -1494,49 +1504,33 @@ définition en tant que flexbox*/
         display: flex;
         justify-content: space-around;
         width: 100%;
-        height: 20px;
-        padding-top: 10%;
-        padding-bottom: 5%;
-        border-bottom: 2px solid grey;
+        height: 60px;
     }
 
-    /*liens de navigation
-    définition de la largeur de chaque lien
-    alignement centré*/
-    #liens a
-    {
+    
+
+    .lien{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 50%;
-        text-align: center;
+        height: 60px;
+        border-bottom: 2px solid #f2f2f2;
     }
 
-    /*définition de la taille de police des liens*/
-    header nav a
-    {
-       font-size: 0.9em;
-   }
+    
 
     /*animation au passage de la souris
     définition de la hauteur de soulignement
     définition de l'espacement haut
     soulignement en bleu
     mise à la couleur bleue de la police*/ 
-    header a:hover
+    .lien:hover
     {          
-        /*height: 43px;
-        padding-top: 25px;
-        border-top: none;
-        text-decoration: none;
-        border-bottom: 2px solid #0065fc;
-        color: #0065fc;*/
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 20px;
-        border-top: none;
-        /*padding-top: 10%;*/
-        padding-bottom: 2%;
-        border-bottom: 2px solid #0065FC;
-        color: #0065FC;
+    padding-top: 0;
+    border-top: none;
+    border-color: #0065FC;
+    padding-bottom: 4px;
     }
 
     /*Définition de la hauteur de police de l'en-tête*/
@@ -1723,18 +1717,7 @@ définition en tant que flexbox*/
         align-items: baseline;
     }
 
-    /*icones du bloc d'informations complémentaires
-    coloration en bleu
-    définition de la largeur
-    arrondi des bordures
-    définition de la hauteur*/
-    #info
-    {
-        color: #0065fc;
-        width: 7%;
-        border-radius: 50%;
-        height: 18px;
-    }
+   
 
     /*texte du bloc d'informations complémentaires
     définition en tant que flexbox
@@ -1791,6 +1774,8 @@ définition en tant que flexbox*/
         width: 90%;
         margin: auto;
         height: 325px;
+        box-shadow: 3px 3px #f2f2f2;
+
     }
 
     
