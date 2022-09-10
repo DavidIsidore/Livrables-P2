@@ -97,6 +97,7 @@ form
 {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 /*loupe en remplacement du bouton recherche
@@ -150,6 +151,7 @@ hauteur du champ*/
     font-size: 1.2em;
     border:  none;
     padding: 1%;
+    height: 50px;
 }
 /*FIN DES PARAMETRES DU FORMULAIRE DE RECHERCHE*/
 
@@ -174,7 +176,9 @@ mise en gras de la police*/
     align-items: center;
     justify-content: flex-start;
     font-weight: 700;
+    align-items: baseline;
 }
+
 
 /*espacement du contenu des filtres*/
 #filtres p
@@ -194,11 +198,12 @@ définition des marges intérieures*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid grey;
+    border: 2px solid #f2f2f2;
     border-radius: 27px;
     margin-right: 2%;
     padding-right: 3%;
     height: 50px;
+    margin-bottom: 20px;
 }
 
 /*espacement du texte mis en valeur du bloc filtres*/
@@ -216,6 +221,7 @@ définition de la largeur*/
     display: flex;
     flex-direction: row;
     min-width: 80%;
+    flex-wrap: wrap;
 }
 
 /*Coloration en bleu au passage de la souris*/
@@ -236,7 +242,7 @@ marges intérieures*/
     border-radius: 25px;
     padding: 20px;
     margin-left: -2px;
-    height: 13px;
+    height: 14px;
 }
 
 /*filtre animaux
@@ -932,6 +938,7 @@ mise en gras de la police*/
     align-items: center;
     justify-content: flex-start;
     font-weight: 700;
+    align-items: baseline;
 }
 
 /*espacement du contenu des filtres*/
@@ -951,10 +958,11 @@ définition des marges intérieures*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid grey;
+    border: 2px solid #f2f2f2;
     border-radius: 27px;
     margin-right: 2%;
     padding-right: 3%;
+    height: 50px;
 }
 
 
@@ -992,7 +1000,7 @@ marges intérieures*/
     border-radius: 25px;
     padding: 20px;
     margin-left: -2px;
-    height: 13px;
+    height: 14px;
 }
 
 /*filtre animaux
@@ -1569,9 +1577,11 @@ définition en tant que flexbox*/
     définition de la marge gauche*/
     form
     {
-        width: 90%;
+        width: 50%;
         padding-top: 30px;
         margin-left: 5%;
+        align-items: baseline;
+        height: 50px;
     }
 
     /*Champ de recherche du formulaire
