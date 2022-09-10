@@ -1,0 +1,10 @@
+import font awesome
+changement de l'espacement des liens du header
+changement du border-bottom des liens du header
+le texte n'est plus collé aux icones dans les filtres
+modification de l'icone info : superposition de 2 icones font awesome
+remplacement des étoiles de notation bleues à fond blanc par des étoiles grises
+réglage du décalage de la partie 'les plus populaires' sur mobile
+rajout des ombres portées de la partie 'Hébergements sur tablette et mobile
+modification du surlignement des liens du header
+modification du padding-left du footer
